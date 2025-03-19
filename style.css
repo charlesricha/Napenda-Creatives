@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/*Universal COmponents*/
+:root{
+    --main-color:#ff3300;
+    --text-color:#ffffff;
+    --backfall-bg-color:#0f0017;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.not-btn{
+    background: none;
+    border: none;
+    color: var(--text-color);
+
+}
+.btn{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 39px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    margin-top: .5rem;
+}
+.small-btn{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding:0 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+body{
+    
+    background-color: var(--backfall-bg-color);
+    background:url(./Images/Mobile\ BackGround.png);
+    color:white;
+    font-family: "Outfit", sans-serif;
+    background-size: cover;
+}
+
+
+/*****************
+ Hamburger Menu
+ *******************/
+ .hamburger-and-close{
+    display: block;
+ }
+ #close{
+    display: none;
+ }
+/*****************
+ Landing Page 
+ *******************/
+
+.navbar{
+    padding: 0 1rem;
+    z-index: 100;
+    background: var(--backfall-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    
+}
+nav a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+.logo{
+    font-size: 16px;
+}
+
+.main-content{
+     
+   height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.main-content img{
+    height: 207px;
+    width: 205px;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*****************
+ Products Page 
+*******************/
+
+#Products{
+    height: auto;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.selection{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selection a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.selection .active {
+    color: var(--main-color);
+    border-bottom:1px solid var(--main-color);
+}
+
+/* aesthetics */
+
+.products-container{
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+}
+.product{
+    background-color: var(--backfall-bg-color);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+#graphicdesign{
+    display: none;
+}
+
+
+
+/***************
+    Contact Us Page
+***************/
+
+#contact-us{
+    padding: 1rem 0;
+    background: var(--backfall-bg-color);
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+#contact-us p{
+    font-size: 1.6rem;
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+
+
+#footer{
+    width: 80%;
+    margin: 0 auto;
+}
+footer{
+    margin-bottom: 1rem;
+}
+/****************
+ Media Screen 
+ ****************/
+
+@media screen and (min-width: 500px){
+    body{
+        background: url(./Images/Desktop\ Background\ Image.png);
+    }
+    nav{
+        display: block;
+    }
+ 
+    
+}
+@media screen and (max-width: 500px){
+   
+    nav{
+        
+        padding: .5rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50vh;
+        gap: .3rem;
+        position: relative;
+        display: none;
+    }
+
+    nav a{
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid white;
+        background-color: var(--backfall-bg-color);
+        border-radius: 15px;
+    }
+
+    nav a:hover{
+        background-color: var(--main-color);
+        color: var(--text-color);
+    }
+}
