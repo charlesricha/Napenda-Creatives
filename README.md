@@ -7,6 +7,7 @@
    
 <img src="./preview.png" alt="" >
 <img src="./preview2.PNG" alt="" >
+<img src="./preview3.PNG" alt="" >
 </div>
 
 ## 🚀 Project Overview
