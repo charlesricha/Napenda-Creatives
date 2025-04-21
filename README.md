@@ -2,6 +2,9 @@
 
 Welcome to the **Napenda Creatives** website repository! This project is designed to showcase creative works, projects, and services offered by Napenda Creatives.
 
+## Project Preview
+<img src="./preview.png" alt="" >
+
 ## 🚀 Project Overview
 Napenda Creatives is a platform that highlights artistic and innovative works. The website is designed to be visually appealing, user-friendly, and responsive across different devices.
 
