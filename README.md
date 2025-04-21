@@ -6,6 +6,7 @@
 }}>
    
 <img src="./preview.png" alt="" >
+<img src="./preview2.PNG" alt="" >
 </div>
 
 ## 🚀 Project Overview
